@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>localhost/</loc>
+    <loc>https://csh-dream-scape.pages.dev/</loc>
     <lastmod>2024-07-11T10:50:31+08:00</lastmod>
   </url><url>
-    <loc>localhost/posts/first/</loc>
+    <loc>https://csh-dream-scape.pages.dev/posts/first/</loc>
     <lastmod>2024-07-11T10:50:31+08:00</lastmod>
   </url><url>
-    <loc>localhost/posts/</loc>
+    <loc>https://csh-dream-scape.pages.dev/posts/</loc>
     <lastmod>2024-07-11T10:50:31+08:00</lastmod>
   </url><url>
-    <loc>localhost/blog/</loc>
+    <loc>https://csh-dream-scape.pages.dev/blog/</loc>
   </url><url>
-    <loc>localhost/series/</loc>
+    <loc>https://csh-dream-scape.pages.dev/series/</loc>
   </url><url>
-    <loc>localhost/tags/</loc>
+    <loc>https://csh-dream-scape.pages.dev/tags/</loc>
   </url>
 </urlset>
