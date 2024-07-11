@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>csh.blog</title>
-    <link>https://csh-dream-scape.pages.dev/</link>
-    <description>Recent content on csh.blog</description>
+    <title>博文一览s on csh.blog</title>
+    <link>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/</link>
+    <description>Recent content in 博文一览s on csh.blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 11 Jul 2024 10:50:31 +0800</lastBuildDate>
-    <atom:link href="https://csh-dream-scape.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux系统安装elasticsearch</title>
       <link>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/first/</link>
