@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>csh.blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://csh-dream-scape.pages.dev/</link>
     <description>Recent content on csh.blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 16 Jul 2024 13:47:36 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://csh-dream-scape.pages.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Electron开发一款widows桌面应用</title>
-      <link>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/electron/</link>
+      <link>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/electron/</link>
       <pubDate>Tue, 16 Jul 2024 13:47:36 +0800</pubDate>
-      <guid>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/electron/</guid>
+      <guid>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/electron/</guid>
       <description>编写第一个桌面应用程序 1.创建一个项目文件夹，并cd到该文件夹下面。&#xA;npm init 注意： entry point应该是main.js , author和description可以是任何值，但对于应用程序打包是必需的。&#xA;2.安装electron&#xA;npm install --save-dev electron 3.配置electron项目的运行命令，在package.json中的scripts下添加start命令 4.在项目根目录创建一个index.html页面 5.在项目的根目录下创建一个名为main.js的文件,这个文件是整个应用程序的入口 然后运行 npm start 6.打包发布应用程序 添加Electron Forge作为你应用的开发依赖，并使用它的import命令来设置Forge的脚手架&#xA;npm install --save-dev @electron-forge/cli npx electron-forge import npx electron-forge import 打开应用 </description>
     </item>
     <item>
       <title>Ollama ＋ Open WebUI，快捷部署AI大模型到电脑,并离线执行</title>
-      <link>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/ollama/</link>
+      <link>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/ollama/</link>
       <pubDate>Fri, 12 Jul 2024 16:26:54 +0800</pubDate>
-      <guid>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/ollama/</guid>
+      <guid>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/ollama/</guid>
       <description>什么是ollama Ollama 是一个开源软件，让用户可以在自己的硬件上运行、创建和分享大型语言模型服务。这个平台适合希望在本地端运行模型的使用者，因为它不仅可以保护隐私，还允许用户通过命令行界面轻松地设置和互动。Ollama 支持包括 Llama 2 和 Mistral 等多种模型，并提供灵活的定制选项，例如从其他格式导入模型并设置运行参数。&#xA;自从chatgpt出世以来，世界上各个大模型就像雨后春笋一般，遍地开花。但是无独有偶的是每一个大模型都是需要注册他们的账号，或网页端，或app中接受他们提供的服务。&#xA;我们自己要如何在本地使用这些大模型呢。ollama就在这时孕育而生了。只需要一道指令便可以轻松运行大模型。&#xA;下面我们将从ollama+图形界面Open WebUI来实现本地运行类chatgpt服务。&#xA;安装ollama 首先我们需要到ollama官网下载该软件，或者github中https://github.com/ollama/ollama&#xA;Ollama支持Linux、macOS、Windows、Raspberry Pi OS。&#xA;建议电脑至少CPUi5七代以上，RAM 8GB以上再使用Ollama。&#xA;因为Ollama使用llama.cpp技术，所以不需要独立GPU也能跑。不过有独立GPU更好，可以将一些模型层offload给GPU加速运算。&#xA;根据指引下载ollama完成安装之后，可以在cmd查看是否成功安装了ollama&#xA;这里我安装是0.1.48版本 如果不小心关闭了ollama程序，输入ollama serve即可重新启动ollama服务，ollama自带运行日志管理。&#xA;部署open-webui Open WebUI 是一种可扩展、功能丰富且用户友好的自托管 WebUI，旨在完全离线运行。它支持各种LLM运行器，包括 Ollama 和 OpenAI 兼容的 API。&#xA;地址：https://github.com/open-webui/open-webui/tree/main&#xA;我这里是使用docker来进行安装的，如果本机没有docker的话请自行去下载docker 地址：https://www.docker.com/products/docker-desktop/ docker安装完成之后，只需要open-webui官方提供的安装方法进行安装即可&#xA;因为我本机已经安装了ollama 所以直接在cmd中执行&#xA;docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main 这个时候在docker desktop的Images中就能看到下载的open webui了&#xA;加载大模型 我们在docker中点击run启动open-webui项目后在浏览器中输入http://localhost:3000/即可进入&#xA;open-webui本身支持各种语言，英语困难的小伙伴也不用担心。点击右上角我的，设置里面可以选择语言，和主题风格。&#xA;设置语言之后，我们在下面的管理员设置中可以管理我的大模型&#xA;但是本人不建议在这里去下载我们的大模型，因为在这里下载会遇到卡在百分之99的情况。来自某人的教训。我们可以使用ollama提供的命令交互的方式去加载我们的大模型。&#xA;我们只需要在终端执行 便可以加载我们需要的大模型&#xA;ollama run llama3:8b 当然我们可以在ollama中选择我们想要下载那些大模型 https://ollama.com/library&#xA;当我们加载完成大模型之后，我们就可以在本地愉快的和大模型进行对话了。</description>
     </item>
     <item>
       <title>linux系统安装elasticsearch</title>
-      <link>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/first/</link>
+      <link>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/first/</link>
       <pubDate>Thu, 11 Jul 2024 10:50:31 +0800</pubDate>
-      <guid>http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/first/</guid>
+      <guid>https://csh-dream-scape.pages.dev/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88/first/</guid>
       <description>第一： 下载elasticsearch 官网：https://www.elastic.co/cn/ 下载完成后上传到linux服务器上; 注意:root角色没有办法启动es，所以需要先在linux上创建一个用户 我这里创建admin用户。 useradd 用户名 passwd 用户名 #设置用户名的密码 创建用户后，会在home文件夹下自动创建admin的文件夹。 Elasticsearch在linux下使用命令sh elasticsearch start，按键ctrl+c的时候程序就会stop掉，如何将程序在后台启动呢？&#xA;需要使用:./elasticsearch -d 切记这里需要切换linux登录者账号，不可在root角色运行es否则报错 切换到admin用户继续运行./elasticsearch -d 报错 提示我们权限不够 我们给admin账户加上权限chmod +x bin/elasticsearch再执行命令 然后执行ps aux|grep elasticsearch可以查看是否启动 启动成功之后我们通过ip加端口访问es 到此 es已经成功运行了</description>
     </item>
   </channel>
