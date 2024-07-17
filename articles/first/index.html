@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -11,7 +11,7 @@
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E6%A0%8F/first/" />
+<link rel="canonical" href="https://csh-dream-scape.pages.dev/articles/first/" />
 
 
     <title>
@@ -44,27 +44,27 @@
   <meta itemprop="datePublished" content="2024-07-11T10:50:31+08:00">
   <meta itemprop="dateModified" content="2024-07-11T10:50:31+08:00">
   <meta itemprop="wordCount" content="31">
-  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="image" content="https://csh-dream-scape.pages.dev/">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:image" content="https://csh-dream-scape.pages.dev/">
   <meta name="twitter:title" content="linux系统安装elasticsearch">
   <meta name="twitter:description" content="第一： 下载elasticsearch 官网：https://www.elastic.co/cn/ 下载完成后上传到linux服务器上; 注意:root角色没有办法启动es，所以需要先在linux上创建一个用户 我这里创建admin用户。 useradd 用户名 passwd 用户名 #设置用户名的密码 创建用户后，会在home文件夹下自动创建admin的文件夹。 Elasticsearch在linux下使用命令sh elasticsearch start，按键ctrl&#43;c的时候程序就会stop掉，如何将程序在后台启动呢？
 需要使用:./elasticsearch -d 切记这里需要切换linux登录者账号，不可在root角色运行es否则报错 切换到admin用户继续运行./elasticsearch -d 报错 提示我们权限不够 我们给admin账户加上权限chmod &#43;x bin/elasticsearch再执行命令 然后执行ps aux|grep elasticsearch可以查看是否启动 启动成功之后我们通过ip加端口访问es 到此 es已经成功运行了">
 
 
 
-    <meta property="og:url" content="http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E6%A0%8F/first/">
+    <meta property="og:url" content="https://csh-dream-scape.pages.dev/articles/first/">
   <meta property="og:site_name" content="csh.blog">
   <meta property="og:title" content="linux系统安装elasticsearch">
   <meta property="og:description" content="第一： 下载elasticsearch 官网：https://www.elastic.co/cn/ 下载完成后上传到linux服务器上; 注意:root角色没有办法启动es，所以需要先在linux上创建一个用户 我这里创建admin用户。 useradd 用户名 passwd 用户名 #设置用户名的密码 创建用户后，会在home文件夹下自动创建admin的文件夹。 Elasticsearch在linux下使用命令sh elasticsearch start，按键ctrl&#43;c的时候程序就会stop掉，如何将程序在后台启动呢？
 需要使用:./elasticsearch -d 切记这里需要切换linux登录者账号，不可在root角色运行es否则报错 切换到admin用户继续运行./elasticsearch -d 报错 提示我们权限不够 我们给admin账户加上权限chmod &#43;x bin/elasticsearch再执行命令 然后执行ps aux|grep elasticsearch可以查看是否启动 启动成功之后我们通过ip加端口访问es 到此 es已经成功运行了">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="博文一栏">
+    <meta property="article:section" content="articles">
     <meta property="article:published_time" content="2024-07-11T10:50:31+08:00">
     <meta property="article:modified_time" content="2024-07-11T10:50:31+08:00">
-    <meta property="og:image" content="http://localhost:1313/">
+    <meta property="og:image" content="https://csh-dream-scape.pages.dev/">
 
 
 
@@ -111,7 +111,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/%E5%8D%9A%E6%96%87%E4%B8%80%E8%A7%88">Blog</a></li>
+    <ul class="menu__inner"><li><a href="/articles">Blog</a></li><li><a href="/pictures">picture</a></li>
         <div class="submenu">
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">en</a>
@@ -130,6 +130,11 @@
                     </svg>
                 </span>
             
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
         </span>
     </span>
 </header>
@@ -145,7 +150,7 @@
         </div>
 
         <article>
-            <h2 class="post-title"><a href="http://localhost:1313/%E5%8D%9A%E6%96%87%E4%B8%80%E6%A0%8F/first/">linux系统安装elasticsearch</a></h2>
+            <h2 class="post-title"><a href="https://csh-dream-scape.pages.dev/articles/first/">linux系统安装elasticsearch</a></h2>
 
             
             
@@ -156,24 +161,24 @@
 官网：https://www.elastic.co/cn/
 下载完成后上传到linux服务器上;
 <!-- raw HTML omitted -->注意:root角色没有办法启动es，所以需要先在linux上创建一个用户<!-- raw HTML omitted -->
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240701101600.png">
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240701101600.png">
 我这里创建admin用户。
 <code>useradd 用户名</code>
 <code>passwd 用户名 #设置用户名的密码</code>
 创建用户后，会在home文件夹下自动创建admin的文件夹。
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240701100048.png"></p>
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240701100048.png"></p>
 <p><code>Elasticsearch在linux下使用命令sh elasticsearch start，按键ctrl+c的时候程序就会stop掉，如何将程序在后台启动呢？</code></p>
 <pre><code>需要使用:./elasticsearch -d
 </code></pre>
 <p><!-- raw HTML omitted -->切记这里需要切换linux登录者账号，不可在root角色运行es否则报错<!-- raw HTML omitted -->
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709131854.png">
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709131854.png">
 切换到admin用户继续运行./elasticsearch -d 报错 提示我们权限不够
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132022.png">
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132022.png">
 我们给admin账户加上权限<code>chmod +x bin/elasticsearch</code>再执行命令
 然后执行<code>ps aux|grep elasticsearch可以查看是否启动</code>
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132251.png">
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132251.png">
 启动成功之后我们通过ip加端口访问es
-<img src="/images/1/6/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132436.png">
+<img src="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240709132436.png">
 到此 es已经成功运行了</p>
 
             </div>
