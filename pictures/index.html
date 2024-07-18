@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="xxxx" />
-<meta name="keywords" content="" />
+<meta name="keywords" content="homepage, blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://csh-dream-scape.pages.dev/pictures/" />
@@ -15,7 +15,7 @@
 
     <title>
         
-            test :: csh.blog  — blog.x
+             :: csh.blog  — blog.x
         
     </title>
 
@@ -37,20 +37,20 @@
 
 
 
-  <meta itemprop="name" content="test">
+  <meta itemprop="name" content="csh.blog">
   <meta itemprop="description" content="xxxx">
   <meta itemprop="image" content="https://csh-dream-scape.pages.dev/">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://csh-dream-scape.pages.dev/">
-  <meta name="twitter:title" content="test">
+  <meta name="twitter:title" content="csh.blog">
   <meta name="twitter:description" content="xxxx">
 
 
 
     <meta property="og:url" content="https://csh-dream-scape.pages.dev/pictures/">
   <meta property="og:site_name" content="csh.blog">
-  <meta property="og:title" content="test">
+  <meta property="og:title" content="csh.blog">
   <meta property="og:description" content="xxxx">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -138,7 +138,7 @@
         </div>
 
         <article>
-            <h2 class="post-title"><a href="https://csh-dream-scape.pages.dev/pictures/">test</a></h2>
+            <h2 class="post-title"><a href="https://csh-dream-scape.pages.dev/pictures/"></a></h2>
 
             
             
@@ -160,7 +160,7 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/2.4.2/jquery.nanogallery2.min.js"></script>
 </head>
 
-<body>
+<body id = "bg">
 <div class="table-custom">
 
     <!--nanogallery畫廊程式碼-->
@@ -176,13 +176,14 @@
 <!-- ============================jQuery================================== -->
 <script type="text/javascript">
     $("#nanogallery2").nanogallery2({
-        itemsBaseURL: "https://i.imgur.com/", // 圖片網址前綴
+        // itemsBaseURL: "", // 圖片網址前綴
         thumbnailWidth: "auto", // 縮圖寬度
-        thumbnailHeight: 150, // 縮圖高度
-        galleryDisplayMode: "moreButton", // 圖片多於一定數量就顯示More按鈕
-        galleryDisplayMoreStep: 3, // 最多顯示幾行
+        thumbnailHeight: 300, // 縮圖高度
+        // galleryDisplayMode: "moreButton", // 圖片多於一定數量就顯示More按鈕
+        // galleryDisplayMoreStep: 3, // 最多顯示幾行
         viewerGallery: "none", //不在燈箱顯示縮圖,
         imageTransition: "swipe",
+        fnThumbnailHover: hoverImage,
         gallerySorting: "random", // 是否開啟圖片隨機排序
         thumbnailLabel: {"position": "onBottom", "displayDescription": false, "titleMultiLine": true},
         galleryFilterTags: 'description',
@@ -196,21 +197,44 @@
             topRight: 'pageCounter, playPauseButton, zoomButton, fullscreenButton, downloadButton, closeButton'
         },
         items: [ // 圖片
-            {src: 'ehTIPhz.jpeg', srct: 'ehTIPhz.jpeg', title: '', 'description': '雪風'},
-            {src: '79anHDY.png', srct: '79anHDY.png', title: '', 'description': '時雨'},
-            {src: 'Mjml2zs.png', srct: 'Mjml2zs.png', title: '', 'description': '時雨 雪風 #Shigure #Yukikaze'},
-            {src: 'fCQadJi.png', srct: 'fCQadJi.png', title: '', 'description': '雪風'},
-            {src: 'dlhNnEL.png', srct: 'dlhNnEL.png', title: '', 'description': '扶桑 山城 #Fusou #Yamashiro'},
-            {src: 'JCMZDQT.png', srct: 'JCMZDQT.png', title: '', 'description': '最上'},
-            {src: 'sRxPU0m.jpg', srct: 'sRxPU0m.jpg', title: '', 'description': '時雨'},
-            {src: 'zZ0vNvR.png', srct: 'zZ0vNvR.png', title: '', 'description': '山雲 朝雲 #Kazagumo #Asagumo'},
-            {src: 'd5OXGbJ.jpg', srct: 'd5OXGbJ.jpg', title: '', 'description': '時雨 雪風 #Shigure #Yukikaze'},
-            {src: 'jV4uhwi.png', srct: 'jV4uhwi.png', title: '', 'description': '扶桑 山城 #Fusou #Yamashiro'},
-            {src: 'i3Yfo9V.png', srct: 'i3Yfo9V.png', title: '', 'description': '山城'}
-        ]
+            {src: '/wallpapers/sNxxSMr.png', srct: '/wallpapers/sNxxSMr.png', title: '', 'description': '和风 #anime #kawakaze' },
+            {src: '/wallpapers/O70RbOs.png', srct: '/wallpapers/O70RbOs.png', title: '', 'description': '#anime'},
+            {src: '/wallpapers/rMIDBHx.jpg', srct: '/wallpapers/rMIDBHx.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/XFXv4ya.jpg', srct: '/wallpapers/XFXv4ya.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/nqNuo4Y.jpg', srct: '/wallpapers/nqNuo4Y.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/7xbmSg1.jpg', srct: '/wallpapers/7xbmSg1.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/ail8Nrw.jpg', srct: '/wallpapers/ail8Nrw.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/nQoKCjt.jpg', srct: '/wallpapers/nQoKCjt.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/PuqnTxQ.jpg', srct: '/wallpapers/PuqnTxQ.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/qeUzMtW.png', srct: '/wallpapers/qeUzMtW.png', title: '', 'description': '#anime'},
+            {src: '/wallpapers/b5p3Ykv.png', srct: '/wallpapers/b5p3Ykv.png', title: '', 'description': '#anime'},
+            {src: '/wallpapers/s8o4lTv.jpg', srct: '/wallpapers/s8o4lTv.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/ImkwzMB.jpg', srct: '/wallpapers/ImkwzMB.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/7rR6Hsm.jpg', srct: '/wallpapers/7rR6Hsm.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/pwWxRwv.jpg', srct: '/wallpapers/pwWxRwv.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/CEVAQhh.jpg', srct: '/wallpapers/CEVAQhh.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/sj07eYU.jpg', srct: '/wallpapers/sj07eYU.jpg', title: '', 'description': '#anime'},
+            {src: '/wallpapers/X4lrNZv.jpg', srct: '/wallpapers/X4lrNZv.jpg', title: '', 'description': '#anime'}
+            ]
     });
+ function hoverImage($thumbnail, item, GOMidx) {
+  var bg = document.getElementById("bg");
+   bg.style.backgroundImage = "url(" + item.src +")";
+   // bg.style.backgroundRepeat  = "no-repeat";
+   // bg.style.backgroundPosition = "center";//设置背景图的位置
+   // bg.style.backgroundSize = "cover";//设置背景图像的尺寸
+}
+
 </script>
 <!-- ============================css================================== -->
+<style>
+    body {
+        background-image: url("/wallpapers/sNxxSMr.png");
+/*        background-repeat: no-repeat;*/
+        background-position: center;//设置背景图的位置
+        background-size: cover;//设置背景图像的尺寸
+    }
+</style>
 <!-- <style>
     .table-custom {
         width: 1000px;
@@ -244,6 +268,8 @@
         }
     }
 </style> -->
+
+
 
 </html>
             </div>

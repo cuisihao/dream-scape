@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 16 Jul 2024 13:47:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 15:16:16 +0800</lastBuildDate>
     <atom:link href="https://csh-dream-scape.pages.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo&#43;nanogallery2 开发博客画廊功能</title>
+      <link>https://csh-dream-scape.pages.dev/articles/nanollery2/</link>
+      <pubDate>Thu, 18 Jul 2024 15:16:16 +0800</pubDate>
+      <guid>https://csh-dream-scape.pages.dev/articles/nanollery2/</guid>
+      <description>对于纯java后端开发，前端的东西还依旧停留在JavaScript的时代，最近想要丰富一下博客的内容，【本人目前博客使用的hugo的纯静态】。&#xA;所以想要找到一款比较好用的jquery插件，来帮我去更好的做出一款博客上的画廊效果。于是乎在网上流浪的半天，终于找到一个和我的想发十分契合的插件nanogallery2。&#xA;这是官网地址：https://nanogallery2.nanostudio.org/&#xA;nanogallery2提供了丰富的画廊显示方式，包括网格，瀑布，标签，支持放大，本地，甚至线上url显示。&#xA;工具找到了，接下来就是要开发了。但是有一个难题出现在了我的面前。hugo的博客是纯静态md文件生成，我们都知道md文件可以提供css语法编写文档，但是hugo是否支持md文件编码js，我不敢确定。&#xA;抱着尝试的态度，我创建了一个画廊的md文件&#xA;我引入了nanogallery2并编写了对应的html尝试在hugo创建的网站上运行，结果果然不行&#xA;我的md文件上显示了我编写的代码，这显示不是我想要的，那么怎么去实现呢。我第一想法是去hugo官网上去寻找对应解决的方法；&#xA;1.在layout文件夹下面创建html 在md文件中使用&#xA;亲测无用&#xA;亦或者是在md的front-matter中添加 markup：html 依旧无用。&#xA;最后发现居然需要配合summary这个属性使用。啊，这。。。。。。&#xA;运行后我的画廊终于显示了出来。&#xA;到这里其实已经大部分符合我心目中的想要做到的效果了，但是我觉得后面的body黑空空的感觉并不满意。于是我又想到把页面上看到的图片，用轮播的形式在后面替换显示。&#xA;考虑一分钟之后，我放弃了，我觉得这对看到这个内容板块的人交互并不是很好。【虽然也没人看】&#xA;于是我又有了另一种想法，如果我在浏览这些图片的时候通过光标切换这些图片时后面的背景图跟着我切换的图片变化，那不是更酷。&#xA;想法有了，那就说干就干。首先如果要跟着图片进行切换，我就必须要拿到图片切换的点击事件，或者说nanogallery2有没有提供一些api让我们去干这些事情呢。 果然是我选出来的插件，看来nanogallery2早就预测到了我的想法。&#xA;官网提供了很多的events事件，但是该怎么使用呢。真是头大，官网也没有例子 又搞了半天 终于是找到了：https://stackoverflow.com/questions/61808580/how-to-use-events-in-nanogallery2s-api&#xA;我们给到一个事件，我这里选择的是鼠标悬浮&#xA;好了，我们看下效果如何&#xA;完美的实现了我想要的鼠标悬浮背景图切换的功能。</description>
+    </item>
     <item>
       <title>使用Electron开发一款widows桌面应用</title>
       <link>https://csh-dream-scape.pages.dev/articles/electron/</link>
